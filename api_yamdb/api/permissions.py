@@ -1,5 +1,4 @@
 from rest_framework import permissions
-
 from reviews.models import ADMIN, MODERATOR
 
 
@@ -9,6 +8,8 @@ class IsAdminOrReadOnly(permissions.BasePermission):
             return True
         elif request.method in permissions.SAFE_METHODS:
             return True
+        else:
+            return False
 
 
 class IsUserOrAdminOrModerOrReadOnly(permissions.BasePermission):
