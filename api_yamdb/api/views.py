@@ -1,6 +1,5 @@
 import uuid
 
-from api_yamdb.settings import EMAIL_AUTH
 from django.contrib.auth import get_user_model
 from django.core.mail import send_mail
 from django.db.models import Avg
@@ -13,7 +12,7 @@ from rest_framework.permissions import SAFE_METHODS
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 from reviews.models import Category, Genre, Review, Title
-
+from api_yamdb.settings import EMAIL_AUTH
 from .filters import TitleFilter
 from .mixins import ListCreateDestroyViewSet
 from .permissions import IsAdminOrReadOnly, IsUserOrAdminOrModerOrReadOnly
