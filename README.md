@@ -46,5 +46,10 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 https://github.com/MaxAbakumov/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
 ```
+Ссылка на проект:
+
+```
+http://51.250.107.2/admin/
+```
 
 Автор: Абакумов Максим
